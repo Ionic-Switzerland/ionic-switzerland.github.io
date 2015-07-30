@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+    
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Ionic Switzerland">
+        <title>Ionic Switzerland</title>
+        <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+        <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link href='http://fonts.googleapis.com/css?family=Roboto:400,100' rel='stylesheet' type='text/css'>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="js/parsley.config.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/parsley.js/2.1.2/parsley.min.js"></script>
+        <script src="js/register.js"></script>
+    </head>
+    
+    <body>
+        <div class="splash-container">
+            <div class="splash">
+                <img src="img/ionic-logo-white.svg" alt="">
+                <h1 class="splash-head">Ionic<span>Conf</span></h1>
+                <p class="splash-subhead">Be part of the first Ionic conference in Switzerland!</p>
+                <p>
+                    <a href="http://purecss.io" class="pure-button pure-button-primary">Register for free</a>
+                </p>
+                <p class="splash-subhead">15.09.2015 in Baden Switzerland</p>
+            </div>
+        </div>
+        <div class="content">
+            <h2 class="content-head is-center">What is IonicConf?</h2>
+            <div class="pure-g">
+                <div class="l-box pure-u-1">
+                    <p>IonicConf is the first conference for Ionic Framework developers and people interested in developing crossplatform mobile applications with web technologies. Let's learn, share ideas, discuss, drink a beer a meet the fantastic ionic community of Switzerland.</p>
+                    <p>Register today!</p>
+                </div> 
+            </div>
+            
+            <div class="pure-g">
+                <div class="l-box pure-u-1 pure-u-lg-1-3">
+                    <h3 class="content-subhead">Where</h3>
+                    <address>
+                        Stadtturmstrasse 10 <br>
+                        5400 Baden <br>
+                        Switzerland <br>
+                    </address>
+                    <a href="https://www.google.com/maps?q=Stadtturmstrasse+10+5400+Baden">Google Maps</a>
+                    <p>A big thanks to Infocentric Reasearch AG who has been so kind as to allow us to use their conference room.</p>
+                </div>
+                <div class="l-box pure-u-1 pure-u-lg-1-3">
+                    <h3 class="content-subhead">When</h3>
+                    <p>The conference will take place on the 15th of September </p>
+                </div>
+                <div class="l-box pure-u-1 pure-u-lg-1-3">
+                    <h3 class="content-subhead">Who</h3>
+                    <p>We are currently calling out for speakers. Are you interested in speaking/showing off? Use the form below to register yourself.</p>
+                </div>
+            </div>
+        </div>
+        <div class="register-content content">
+            <h2 class="content-head is-center">Register now</h2>
+            <form id="registrationform" class="pure-form pure-form-stacked">
+                <label for="fullname">Full Name * :</label>
+                <input type="text" name="fullname" required />
+        
+                <label for="email">Email * :</label>
+                <input type="email" name="email" data-parsley-trigger="change" required />
+        
+                <label for="submitTalk">Submit a talk *:</label>
+                <p><input type="checkbox" name="submitTalk" value="true" />&nbsp;<span>Yes, i submit a talk</span> </p>
+                
+                <div id="talk-description-block" class="hidden">
+                    <label for="talkDescription">Talk Description :</label>
+                    <textarea name="talkDescription" data-parsley-validate-if-empty  data-parsley-conditionalrequired='["[name=\"submitTalk\"]"]' data-parsley-trigger="keyup" data-parsley-maxlength="1000" data-parsley-validation-threshold="10"></textarea>    
+                </div>
+        
+                <button type="submit" class="pure-button pure-button-primary">Register</button>
+            </form>
+            <div id="success" class="pure-g hidden">
+                <div class="l-box pure-u-1 is-center">
+                    Well done. You are registred for IonicConf.
+                </div> 
+            </div>
+        </div>
+        <div class="footer l-box is-center">2015 Ionic Switzerland</div>
+    </body>
+
+</html>
