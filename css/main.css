@@ -145,12 +145,15 @@ a.pure-button-primary {
 .content-subhead {
     color: #1f8dd6;
     background-repeat: no-repeat;
-    background-position: middle right;
-    padding-right: 40px;
+      background-position: center left;
+      padding-left: 40px;
+      height: 40px;
+      line-height: 40px;
+      background-size: 32px;
 }
-    .content-subhead i {
-        margin-right: 7px;
-    }
+.content-subhead i {
+    margin-right: 7px;
+}
 
 /* This is the class used for the dark-background areas. */
 .ribbon {
