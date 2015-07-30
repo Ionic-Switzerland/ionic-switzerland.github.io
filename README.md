@@ -1,2 +1,2 @@
 # ionic-switzerland.github.io
-Ionic Switzerland Websitea
+Ionic Switzerland Website
