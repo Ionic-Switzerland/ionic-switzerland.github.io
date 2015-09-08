@@ -22,9 +22,6 @@
                 <img src="img/ionic-logo-white.svg" alt="">
                 <h1 class="splash-head">Ionic<span>Conf</span></h1>
                 <p class="splash-subhead">Be part of the first Ionic conference in Switzerland!</p>
-                <p>
-                    <a href="#anchor-register" class="pure-button pure-button-primary">Register for free</a>
-                </p>
                 <p class="splash-subhead">15.09.2015 in Baden Switzerland</p>
             </div>
         </div>
@@ -56,31 +53,6 @@
                     <h3 class="content-subhead who">Who</h3>
                     <p>We are currently calling out for speakers. Are you interested in speaking/showing off? Use the form below to register yourself.</p>
                 </div>
-            </div>
-        </div>
-        <div class="register-content content">
-            <a name="anchor-register"><h2 class="content-head is-center">Register now</h2></a>
-            <form id="registrationform" class="pure-form pure-form-stacked">
-                <label for="fullname">Full Name * :</label>
-                <input type="text" name="fullname" required />
-        
-                <label for="email">Email * :</label>
-                <input type="email" name="email" data-parsley-trigger="change" required />
-        
-                <label for="submitTalk">Submit a talk *:</label>
-                <p><input type="checkbox" name="submitTalk" value="true" />&nbsp;<span>Yes, i submit a talk</span> </p>
-                
-                <div id="talk-description-block" class="hidden">
-                    <label for="talkDescription">Talk Description :</label>
-                    <textarea name="talkDescription" data-parsley-validate-if-empty  data-parsley-conditionalrequired='["[name=\"submitTalk\"]"]' data-parsley-trigger="keyup" data-parsley-maxlength="1000" data-parsley-validation-threshold="10"></textarea>    
-                </div>
-        
-                <button type="submit" class="pure-button pure-button-primary">Register</button>
-            </form>
-            <div id="success" class="pure-g hidden">
-                <div class="l-box pure-u-1 is-center">
-                    Well done. You are registred for IonicConf.
-                </div> 
             </div>
         </div>
         <div class="footer l-box is-center">2015 Ionic Switzerland</div>
